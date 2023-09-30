@@ -11,7 +11,7 @@ def update_readme():
     results = count_files()
     with open("./README.md", "w+") as f:
         for folder, cnt in results:
-            f.write(f"{folder}\t{cnt}")
+            f.write(f"{folder}\t{cnt}\n")
 
 if __name__ == "__main__":
     update_readme()
